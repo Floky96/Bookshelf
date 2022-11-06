@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <script src="./js/javascript.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="./img/imgbin_paper-sunset-shimmer-quill-cutie-mark-crusaders-book-png.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09ca86ed6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="background">
+            <div class="container" id="container">
+                <div class="addBookArea" id="addBookNew">
+                    <div class="input">
+                        <div class="title">Title:<textarea id="titleInput"></textarea></div>
+                        <div class="author">Author:<textarea id="authorInput"></textarea></div>
+                        <div class="pages">Pages:<textarea id="pagesInput"></textarea></div>
+                        <button class="addBookBtn" id="confirmAdd" onclick="confirm()">Add Book</button>
+                        <button class="cancelBookBtn" id="cancelAdd"
+                            onclick="cancel(), bookMaker(books)">Cancel</button>
+                    </div>
+                </div>
+                <div class="contentHead">
+                    <h1>Bookshelf</h1>
+                    <div class="sealContainer">
+                        <h1>Add Book</h1>
+                        <div class="headSeal" id="seal" onclick="addBookNew()"></div>
+                    </div>
+                </div>
+                <div class="contentBody" id="contentBody">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
